@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import UserManage from './components/system/UserManage.vue'
 
 Vue.use(Router)
 
@@ -11,7 +12,15 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      children:[
+        {
+          path: '/user',
+          name: 'user',
+          component:UserManage
+        }
+       
+      ]
     },
     {
       path: '/about',
