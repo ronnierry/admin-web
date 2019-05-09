@@ -1,6 +1,6 @@
 <template>
  <div class="layout">
-     <Header :style="{background: '#fff', boxShadow: '0 2px 3px 2px rgba(0,0,0,.1)'}"></Header>
+     <Header :style="{background: '#fff'}"></Header>
         <Sider :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
             <Menu active-name="1-2" theme="dark" width="auto" :open-names="['1']">
                 <Submenu name="1">
